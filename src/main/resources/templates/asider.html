@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Asider Estudiantes</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="d-flex flex-column p-3 bg-light" style="width: 250px;" th:fragment="sidebar">
+  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+    <span class="fs-4">Menú Estudiantes</span>
+  </a>
+  <hr>
+  <ul class="nav nav-pills flex-column mb-auto">
+    <li class="nav-item">
+      <a th:href="@{/estudiantes/lista}" class="nav-link link-dark" aria-current="page">
+        <i class="bx bx-list-ul"></i> Lista de Estudiantes
+      </a>
+    </li>
+    <li>
+      <a th:href="@{/estudiantes/nuevo}" class="nav-link link-dark">
+        <i class="bx bx-plus"></i> Agregar Estudiante
+      </a>
+    </li>
+    <li>
+      <a th:href="@{/estudiantes/reporte}" class="nav-link link-dark">
+        <i class="bx bx-bar-chart"></i> Reportes
+      </a>
+    </li>
+    <li>
+      <a th:href="@{/configuracion}" class="nav-link link-dark">
+        <i class="bx bx-cog"></i> Configuración
+      </a>
+    </li>
+    <li>
+      <a th:href="@{/logout}" class="nav-link link-dark">
+        <i class="bx bx-power-off"></i> Cerrar Sesión
+      </a>
+    </li>
+  </ul>
+</nav>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Footer Estudiantes</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<footer class="content-footer footer bg-light" th:fragment="footer">
+  <div class="container-xxl d-flex flex-wrap justify-content-between py-3 flex-md-row flex-column">
+    <div class="mb-2 mb-md-0">
+      ©
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      , creado con ❤️ para el sistema de gestión de estudiantes.
+    </div>
+    <div>
+      <a href="https://mi-sitio.com/acerca" class="footer-link me-4" target="_blank">Acerca de</a>
+      <a href="https://mi-sitio.com/contacto" class="footer-link me-4" target="_blank">Contacto</a>
+      <a href="https://mi-sitio.com/soporte" class="footer-link me-4" target="_blank">Soporte</a>
+      <a href="https://mi-sitio.com/terminos" class="footer-link me-4" target="_blank">Términos de Uso</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
